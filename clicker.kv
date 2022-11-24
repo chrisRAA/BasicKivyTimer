@@ -1,0 +1,25 @@
+#:import kivy kivy
+
+<ClickLayout>:
+	cols: 2
+	rows: 3
+	Label:
+	    text: root.timerText
+	Label:
+	    text: root.scoreText
+    Button:
+        id: knap1
+        text: '1'
+        on_release: root.buttonClicked(self)
+    Button:
+        id: knap2
+        text: '2'
+        on_release: root.buttonClicked(self)
+    Button:
+        id: knap3
+        text: '3'
+        on_release: root.buttonClicked(self)
+    Button:
+        id: knap4
+        text: '4'
+        on_release: root.buttonClicked(self)
