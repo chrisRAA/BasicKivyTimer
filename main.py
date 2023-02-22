@@ -29,6 +29,7 @@ class ClickLayout(GridLayout):
         self.timerText = str(round(self.timeLeft))
         self.scoreText = str(self.score)
         if self.timeLeft <= 0:
+            self.score -=1
             self.reset()
             self.timeLeft = self.clicktime
 
